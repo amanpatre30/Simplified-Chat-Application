@@ -38,7 +38,6 @@ const ChatWindow = ({ theme }) => {
 
   const handleFeedback = (messageIndex, feedback) => {
     console.log("Message Index:", messageIndex, "Feedback:", feedback);
-    // Optional: save feedback to backend
   };
 
   if (!session) {
