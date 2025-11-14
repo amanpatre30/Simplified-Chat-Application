@@ -3,7 +3,6 @@ import React from "react";
 const TableResponse = ({ table, theme }) => {
   if (!table || table.length === 0) return null;
 
-  // Decide border and text classes based on theme
   const borderClass = theme === "dark" ? "border-gray-600" : "border-black";
   const textClass = theme === "dark" ? "text-white" : "text-black";
 
