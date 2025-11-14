@@ -10,17 +10,15 @@ const Sidebar = ({ sessions, theme }) => {
     const data = await res.json();
     navigate(`/chat/${data.id}`);
   };
-
-  // Sidebar background
   const bgColor = theme === "dark" ? "bg-gray-800" : "bg-gray-100";
-  // Heading color
+
   const headingText = theme === "dark" ? "text-white" : "text-gray-800";
-  // Session items background and hover
+
   const itemBg =
     theme === "dark"
       ? "bg-gray-700 hover:bg-gray-600"
       : "bg-gray-200 hover:bg-gray-300";
-  // Session items text color
+
   const itemText =
     theme === "dark"
       ? "text-white font-semibold"
