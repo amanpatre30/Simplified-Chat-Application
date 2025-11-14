@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 const AnswerFeedback = ({ onFeedback }) => {
-  const [selected, setSelected] = useState(null); // 'like' | 'dislike'
+  const [selected, setSelected] = useState(null); 
 
   const handleClick = (type) => {
     setSelected(type);
-    if (onFeedback) onFeedback(type); // callback to parent if needed
+    if (onFeedback) onFeedback(type);
   };
 
   return (
